@@ -19,7 +19,7 @@
         default_layer {
             display-name = "Base";
             bindings = <
-                &heart_macro    &media_prev    &media_play_pause    &media_next    &kp LG(DOT)    &audio_mute    &studio_unlock
+                &heart_macro    &kp C_PREVIOUS    &kp C_PLAY_PAUSE    &kp C_NEXT    &kp LG(DOT)    &kp C_MUTE    &studio_unlock
             >;
         };
         
