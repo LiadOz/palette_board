@@ -9,13 +9,19 @@
             bindings = <&kp LT>, <&kp 3>;
         };
     };
+    studio_combo {
+        timeout-ms = <30>;
+        bindings = <&studio_unlock>;
+        key-positions = <0 1>;
+        layers = <0>;
+    };
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             display-name = "Base";
             bindings = <
-                &heart_macro    &kp C_PREVIOUS    &kp C_PLAY_PAUSE    &kp C_NEXT    &kp LG(DOT)    &studio_unlock
+                &heart_macro    &kp C_PREVIOUS    &kp C_PLAY_PAUSE    &kp C_NEXT    &kp LG(DOT)    &kp C_MUTE
             >;
         };
         
