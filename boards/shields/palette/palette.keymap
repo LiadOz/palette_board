@@ -5,10 +5,21 @@
     keymap {
         compatible = "zmk,keymap";
 
+        behaviors {
+            heart_macro: behavior_macro {
+                compatible = "zmk,behavior-macro";
+                label = "Heart <3";
+                #binding-cells = <0>;
+                macro-entries = <
+                    &kp LT
+                    &kp 3
+                >;
+            };
+        };
         default_layer {
             display-name = "Base";
             bindings = <
-                &kp A    &kp B    &kp C &kp D    &kp E    &kp F &studio_unlock
+                &heart_macro    &media_prev    &media_play_pause    &media_next    &kp LG(DOT)    &audio_mute    &studio_unlock
             >;
         };
         
@@ -19,5 +30,7 @@
         extra2 {
             status = "reserved";
         };
+
+        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
     };
  };
