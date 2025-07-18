@@ -6,10 +6,7 @@
         heart_macro: behavior_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <
-                &kp LT
-                &kp 3
-            >;
+            bindings = <&kp LT>, <&kp 3>;
         };
     };
     keymap {
