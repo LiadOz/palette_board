@@ -10,6 +10,7 @@
         };
     };
     studio_combo {
+        compatible = "zmk,combo";
         timeout-ms = <30>;
         bindings = <&studio_unlock>;
         key-positions = <0 1>;
